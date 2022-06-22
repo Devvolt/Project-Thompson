@@ -2,7 +2,7 @@
  * 
  * 
  *      This is the first version of the Vollex RestAPI. It's easibly replacable and applicable to vanilla node + Express.JS servers.
- *      This makes just the basics to the interactions with the MySQL database that can be made.
+ *      This makes just the basics to the interactions with the MongoDB database that can be made.
  *      Future, more sophisticated, and most importantly, better versions will come with new features.
  * 
  *      Authors: Edoardo Borgia Leiva
@@ -15,6 +15,7 @@
 //Necessary Libraries
 
 const express = require('express'); //The base express lib
+const mongoose = require(); //The mongoose Lib to talk to the MongoDB DataBase
 
 // Enviroment variables
 
@@ -60,6 +61,7 @@ router.get('/fuck', (req, res) => {
 
     res.send('FUCK YOU');                       //Number 1: Whoever uses this.
     console.log(`${req.ip} has sworn D:`);      // Thanks  for watching!!!11!1!
+
 });
 
 module.exports = router

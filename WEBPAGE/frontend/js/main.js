@@ -29,9 +29,10 @@ $(function () {
       } else if (req.status === 200) {
           response = JSON.parse(req.responseText);
         discordUser = response.user;
+        coins = response.coins;
         console.log(discordUser);
         $("#quiz-section").show();
-        $("#welcome_txt").text("Benvenuto " + discordUser.username);
+        $("#welcome_txt").text("Benvenuto " + discordUser.username + coins);
       } else {
         $("#errore").text("Errore imprevisto [" + req.status + "]");
       }
