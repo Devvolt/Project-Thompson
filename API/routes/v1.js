@@ -15,7 +15,7 @@
 //Necessary Libraries
 
 const express = require('express'); //The base express lib
-const mongoose = require(); //The mongoose Lib to talk to the MongoDB DataBase
+const mongoose = require('mongoose'); //The mongoose Lib to talk to the MongoDB DataBase
 
 // Enviroment variables
 
