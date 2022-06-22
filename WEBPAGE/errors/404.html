@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VOLLEX | 404</title>
+  </head>
+
+  <body>
+    <h1 id="errore-status"></h1>
+    <h2 id="errore"></h2>
+
+    <script>
+      status = "404";
+      document.getElementById("errore-status").innerHTML =
+        "Pagina non trovata. Errore: " + status;
+      let seconds = 5;
+      setInterval(() => {
+        
+        document.getElementById("errore").innerHTML =
+          "Verrai renderizzato alla pagina principale in " + seconds + " secondi";
+        seconds -= 1;
+      }, 1000);
+
+        setTimeout(() => {
+            window.location.href = "/";
+        }, 6000);
+    </script>
+  </body>
+</html>
