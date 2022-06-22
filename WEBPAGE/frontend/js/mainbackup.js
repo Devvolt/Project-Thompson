@@ -1,2 +1,2 @@
 import Vue from 'vue'
-import App from 'vollex.cc/assets/js/App.vue'
+import App from 'test.vollex.cc/assets/js/App.vue'

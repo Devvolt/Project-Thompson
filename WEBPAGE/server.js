@@ -12,12 +12,12 @@ const axios = require("axios"); // Import Axios
 const { URLSearchParams } = require("url");
 const bodyParser = require("body-parser"); // Import body-parser
 const mongoose = require("mongoose");
-const { model, Schema } = require("mongoose");
+const { database, client_id, client_secret } = require("../config.json")
 
 const db = require("./routes/Schemas/usersDB");
 
 mongoose
-  .connect("mongodb://185.229.237.130:9203/VollexDB", {
+  .connect(database, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -82,8 +82,6 @@ app.get("/teapot", (req, res) => {
 
 /* DISCORD LOGIN START */
 
-const client_id = "831972597877047337";
-const client_secret = "e7VSP0FwG-gbVYQiQ5cV0t-hzQ5Xnuzg";
 
 function make_config(authorization_token) {
   data = {
