@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "vollex-edoardo",
+			"path": ".."
+		},
+		{
+			"name": "VOLLEX",
+			"path": "..\\..\\VOLLEX"
+		},
+		{
+			"name": "Vollex-frontend",
+			"path": "..\\..\\Vollex-frontend"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Vollex-frontend"
+	}
+}
