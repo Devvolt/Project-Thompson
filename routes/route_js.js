@@ -6,7 +6,7 @@ route.get('/main.js', (q, s) =>{
 });
 
 route.get('/main.vue', (q, s) => {
-    s.status(200).semdFile(path.join( __dirname, "..", 'src', 'assets', 'js', 'main.vue'));
+    s.status(200).sendFile(path.join( __dirname, "..", 'src', 'assets', 'js', 'main.vue'));
 });
 
 module.exports = route

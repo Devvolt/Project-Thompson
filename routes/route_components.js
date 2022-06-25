@@ -5,6 +5,4 @@ route.get('/Navbar.vue', (q, s) =>{
     s.status(200).sendFile(path.join( __dirname, "..", 'src', 'assets', 'components', 'Navbar.vue'));
 });
 
-
-
 module.exports = route
